@@ -1,0 +1,71 @@
+.change-log {
+  margin-top: 7vh;
+}
+.change-log > div {
+  border: 1px solid #006666;
+  min-height: 40vh;
+}
+.change-log > div:nth-child(3) {
+  min-height: inherit;
+  border: 0;
+  text-align: right;
+  margin-top: 10px;
+}
+.change-log > div:nth-child(2) dd span {
+  width: 40%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  cursor: default;
+}
+.change-log > div:nth-child(2) dd span:nth-child(1) {
+  font-weight: bold;
+  color: #aaa;
+  width: 20%;
+}
+.change-log > div:nth-child(2) dd span:nth-child(2) {
+  color: #bbb;
+}
+.change-log > div:nth-child(2) dd span:nth-child(3) {
+  color: #009933;
+}
+.change-log > div:nth-child(1) {
+  max-height: 40vh;
+  overflow-y: auto;
+}
+.change-log > div:nth-child(1) span {
+  display: inline-block;
+  cursor: default;
+  vertical-align: top;
+  margin-bottom: 6px;
+}
+.change-log > div:nth-child(1) span:nth-child(1) {
+  width: 20%;
+  font-weight: bold;
+  color: #006666;
+}
+.change-log > div:nth-child(1) span:nth-child(2) {
+  width: 80%;
+}
+.change-log > div:nth-child(4) {
+  background-color: #ffa;
+}
+.change-log > div:nth-child(4) > div {
+  margin-bottom: 6px;
+}
+.change-log > div:nth-child(4),
+.change-log > div:nth-child(2) {
+  overflow-y: scroll;
+  max-height: 40vh;
+}
+.change-log > div:nth-child(4) > div > span:nth-child(1),
+.change-log > div:nth-child(2) > div > span:nth-child(1) {
+  color: #900;
+  margin-right: 10px;
+}
+.change-log > div:nth-child(4) > div.danger > span:nth-child(2),
+.change-log > div:nth-child(2) > div.danger > span:nth-child(2) {
+  color: #ff0000;
+  font-weight: bold;
+}

@@ -1,0 +1,82 @@
+.change-log {
+    margin-top: 7vh;
+    & > div {
+        border: 1px solid #006666;
+        min-height: 40vh; 
+    }
+
+    & > div:nth-child(3) {
+        min-height: inherit;
+        border: 0;
+        text-align: right;
+        margin-top: 10px;
+    }
+    
+    & > div:nth-child(2) {
+        dd {
+            span {
+                width: 40%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: inline-block;
+                cursor: default;
+            }
+
+            span:nth-child(1) {
+                font-weight: bold;
+                color: #aaa;
+                width: 20%;
+            }
+            span:nth-child(2) {
+                color: #bbb;
+            }
+            span:nth-child(3) {
+                color: #009933;
+            }
+        }
+    }
+
+    & > div:nth-child(1) {
+        max-height: 40vh;
+        overflow-y: auto;
+        span {
+            display: inline-block;
+            cursor: default;
+            vertical-align: top;
+            margin-bottom: 6px;
+        }
+        span:nth-child(1) {
+            width: 20%;
+            font-weight: bold;
+            color: #006666
+        }
+        span:nth-child(2) {
+            width: 80%;
+        }
+    }
+
+    & > div:nth-child(4) {
+        background-color: #ffa;
+        & > div {
+            margin-bottom: 6px;
+        }
+    }
+
+    & > div:nth-child(4), & > div:nth-child(2) {
+        overflow-y: scroll;
+        max-height: 40vh;
+        & > div {
+            & > span:nth-child(1) {
+                color: #900;
+                margin-right: 10px;
+            }
+            &.danger {
+                & > span:nth-child(2) {
+                    color: #ff0000;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
